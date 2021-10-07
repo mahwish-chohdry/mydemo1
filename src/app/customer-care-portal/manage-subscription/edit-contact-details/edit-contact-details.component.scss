@@ -1,0 +1,60 @@
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+
+    /* honda button */
+
+    color: #03344E;
+}
+form-container{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+.form-column{
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    min-width: 300px;
+}
+.form-label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+    min-height: 20.8px;
+    color: #000000;
+}
+.form-footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    
+}
+.edit-form-button{
+    border-radius: 28px;
+    height: 56px;
+    width: 232px;
+    margin: 1%;
+    border-color: #03344E;
+}

@@ -1,0 +1,43 @@
+<h1 class="heading"><img src="../../../assets/filter-icon.svg">Advanced Filters</h1>
+<div class="flex-container">
+    <div class="sub-heading">Date Range</div>
+
+    <div class="date-selector-row">
+        <div class="date-selector-dropdown">
+            <ng-select class="date-selector" [(ngModel)]="dateFilter" [searchable]="false" [clearable]="false"
+                appearance="outline">
+                <ng-option>Last Month</ng-option>
+                <ng-option>Last Year</ng-option>
+                <ng-option>Custom Range</ng-option>
+            </ng-select>
+        </div>
+        <div class="date-selector-row">
+            <input value="4/4/2021" class="stylized-input" />
+            <div style="font-size: 24px;align-self: center; margin: 0px 7px;">-</div>
+            <input value="4/5/2021" class="stylized-input" />
+        </div>
+    </div>
+    <div class="type-row">
+        <div class="sub-heading">
+            Transaction Type
+        </div>
+        <div class="checkbox-row">
+            <mat-checkbox class="checkbox" color="primary">Invoice</mat-checkbox>
+            <mat-checkbox class="checkbox" color="primary">Payment</mat-checkbox>
+            <mat-checkbox class="checkbox" color="primary">Credit</mat-checkbox>
+            <mat-checkbox class="checkbox" color="primary">Refund</mat-checkbox>
+        </div>
+    </div>
+    <div class="vehicle-row">
+        <div class="sub-heading">
+            Vehicle
+        </div>
+        <div class="checkbox-row">
+            <mat-checkbox class="checkbox" color="primary">Emily's Accord</mat-checkbox>
+            <mat-checkbox class="checkbox" color="primary">Car 2</mat-checkbox>
+        </div>
+    </div>
+    <div class="btn-row">
+        <button mat-flat-button color="primary" class="apply-filter-btn">Apply Filters</button>
+    </div>
+</div>

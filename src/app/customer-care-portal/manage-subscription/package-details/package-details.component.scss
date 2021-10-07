@@ -1,0 +1,326 @@
+
+.body-section{
+    background: #F7F7F7;
+}
+
+.text-box{
+    border: 1.5px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 45%;
+    height: 56px;
+    color: #848484;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    padding: 18px 10px;
+}
+
+.card-table {
+        width: 100%;
+        border: 2px solid #CFCFCF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        -moz-border-radius:10px;
+        text-align: left;
+        margin-bottom: 20px;
+        
+    
+    }
+
+    th {
+        background-color: white; 
+    }
+
+    thead{
+        background-color: white !important;
+        color: #000000;;
+    }
+td, th {
+    padding: 16px;
+    color: #606060;
+}
+
+th {
+    border-bottom: 2px solid #CFCFCF;;
+}
+
+
+
+tr:nth-child(even) { 
+
+            background-color: #FCFCFC; 
+        } 
+        tr:nth-child(odd) { 
+            background-color: #F2F2F2; 
+        } 
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        font-weight: regular;
+        line-height: auto;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        margin: 0px;
+    }
+
+    
+
+    h1{
+        font-size: 32px;
+        line-height:auto;
+        font-weight: regular;
+        letter-spacing: 0px;
+        color: #03344E;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height:auto;
+        font-weight: medium;
+        color: #03344E;
+        letter-spacing: 0.15px;
+    }
+
+    h3{
+        font-size: 20px;
+        line-height:auto;
+        font-weight: regular;
+        color: #03344E;
+        letter-spacing: 0px;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .row-content-right-align{
+        justify-content: flex-end;
+    }
+
+    .secondary-body{
+        font-size: 16px;
+    }
+
+    .header-section{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .header-data{
+        padding: 32px;
+    }
+
+    .subscription-content{
+        margin: 42px 88px 42px 88px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 10px;
+        border:1px solid #CFCFCF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom:28px;
+    }
+
+    .card-left{
+        width: 50%;
+        margin-right: 16px;
+    }
+
+    .card-right{
+        width: 50%;
+        margin-left: 16px;
+    }
+
+    .card-data-left{
+        width: 50%;
+
+    }
+
+    .card-data-right{
+        width: 50%;
+        margin-left: 32px; 
+    }
+
+
+    .card:hover {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0;
+        font-size: 24px;
+        line-height: 28px;
+        background: #03344E;
+        color: #FFFFFF;
+        font-weight: normal;
+        padding: 16px 30px 16px 30px;
+    }
+    .card-sub-header{
+        display: inline;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+
+        letter-spacing: 0.5px;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+    .card-sub-header-right{
+        float: right;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+    .card-data-container {
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 20px;
+    }
+
+    .card-data-label{
+        font-size: 16px;
+        line-height: 18.75px;
+        color: #03344E;
+        display: block;
+    }
+
+    .card-data-info{
+        font-size: 18px;
+        line-height: 21px;
+        color: #606060;
+        display: block;
+    }
+
+    .card-data-block{
+        margin: 24px 0 24px 0px;
+    }
+
+
+    .navigation-back{
+        color: #0071B8;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    .text-normal{
+        color: #3F3F3F;
+        line-height: 23px;
+    }
+
+    .text-normal{
+        color: #3F3F3F;
+        line-height: 23px;
+        font-size: 20px;
+    }
+
+    .mg-rt-16{
+        margin-right: 16px;
+    }
+
+    .mg-rt-32{
+        margin-right: 32px;
+    }
+
+    .btn{
+        color: #03344E;
+        width: 208px;
+        height: 44px;
+        box-sizing: border-box;
+        border-radius: 22px;
+        margin-top:16px;
+        margin-bottom: 16px;
+        background-color: transparent;
+    }
+
+    .btn-primary{
+        border: 1.5px solid #03344E;
+        color: #03344E;
+    }
+
+    .btn-submit{
+        border: 1.5px solid #03344E;
+        color: #FFFFFF;
+        background: #03344E;
+        border-radius: 22px;
+    }
+
+    .btn-danger{
+        border: 1.5px solid #F60000;
+        color: #F60000;
+        float: right;
+    }
+
+    .h2-sub-info{
+        color: #828282;
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    .text-info{
+        font-size: 20px;
+        color: #3F3F3F;
+        display: block;
+    }
+
+    .card-data-heading{
+        color: #03344E;
+        font-size: 20px;   
+        display: block;
+    }
+
+    .card-data-heading-s2{
+        color: #828282;
+        font-size: 20px;
+        display: block;
+        padding-top:16px;
+        padding-bottom: 8px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .card-left{
+            width: 100%;
+            margin-right: 0px;
+        }
+        .card-right{
+            width: 100%;
+            margin-left: 0px;
+        }
+        .row{
+            display: inline;
+            
+        }
+        
+        .card-data-left{
+            width: 100%;
+        }
+
+        .card-data-right{
+            margin-left: 0px; 
+            border-top: 1px solid #CFCFCF;
+            width: 100%;
+        }
+
+        .text-box{
+            width: 100%;
+        }
+
+
+        .btn{
+            float: right;
+            margin-right: 0px;
+            margin-left: 32px;
+        }
+        .btn-container{
+            overflow: hidden;
+        }
+
+    }
+a{
+    cursor: pointer;
+}

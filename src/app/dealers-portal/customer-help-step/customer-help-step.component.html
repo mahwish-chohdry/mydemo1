@@ -1,0 +1,35 @@
+<div class="headings">
+  <h1 class="enroll">Enroll</h1>
+  <h2 class="telematics">Telematics Package</h2>
+</div>
+
+<div class="main-container">
+
+  <div class="step">
+    <h3 class="step-heading">Step {{currrentStepIndex+2}}:{{allStepHeadings[currrentStepIndex]}}</h3>
+    <p class="step-details">
+      {{allStepDescriptions[currrentStepIndex]}}
+    </p>
+  </div>
+  <div class="scrennshot-container">
+    <img src="../../../assets/Dealer Enrollment SMS Screen.png" style="padding-right: 2.5vw;">
+    <img src="../../../assets/Dealer enrollment App Screen.png">
+  </div>
+
+  <div class="faq-container">
+    <h2 class="faq-heading">FAQs & Troubleshooting Guides for Sending Enrollment Link & Adding Vehicle</h2>
+
+    <div class="accordion-container">
+      <app-faq-accordion [panelData]="panelData"></app-faq-accordion>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button mat-stroked-button color="white" class="edit-form-button" (click)="onClickClose()">
+      <img src="../../../assets/arrow-back.svg"> Previous
+    </button>
+    <button mat-flat-button color="primary" class="edit-form-button" style="margin-left: 1vw;" (click)="onClickClose()">
+      Next <img src="../../../assets/arrow-forward.svg">
+    </button>
+  </div>
+</div>

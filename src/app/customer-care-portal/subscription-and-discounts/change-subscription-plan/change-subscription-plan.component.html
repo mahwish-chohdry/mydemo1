@@ -1,0 +1,74 @@
+<div class="main-container">
+    <div>
+        <a href="javascript:void(0);" [routerLink]="'../change-subscription'">
+            <img src="../../../../../assets/back-to-packages.png">
+        </a>
+    </div>
+
+    <div class="title-and-discount">
+        <div class="title-container">
+            <h2 class="title">Security Package</h2>
+            <h4 class="package-info">Package Information</h4>
+        </div>
+        <button class="btn-white btn-text btn-text-color-blue" (click)="ManageDiscountsClick()">View Discount</button>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Select a Package Plan
+        </div>
+        <mat-radio-group class="card-data-container" [(ngModel)]="radioSelection">
+            <div class="plan-card-container" [ngClass]="{'blue-border':radioSelection===1}">
+                <div class="radio-container">
+                    <mat-radio-button value="1" color="primary"></mat-radio-button>
+                </div>
+                <app-plan-card class="plan-card"
+                    [planDuration] = "1"
+                    [planExpiryDate] = "'9/16/2022'"
+                    [planPrice] = "360"
+                ></app-plan-card>
+            </div>
+            <div class="plan-card-container">
+                <div class="radio-container">
+                    <mat-radio-button value="2" color="primary"></mat-radio-button>
+                </div>
+                <app-plan-card class="plan-card"
+                    [planDuration] = "2"
+                    [planExpiryDate] = "'9/16/2023'"
+                    [planPrice] = "388"
+                    [availableDiscount] = "80"
+                ></app-plan-card>
+            </div>
+            <div class="plan-card-container">
+                <div class="radio-container">
+                    <mat-radio-button value="3" color="primary"></mat-radio-button>
+                </div>
+                <app-plan-card class="plan-card"
+                    [planDuration] = "3"
+                    [planExpiryDate] = "'9/16/2024'"
+                    [planPrice] = "460"
+                    [availableDiscount] = "90"
+                ></app-plan-card>
+            </div>
+        </mat-radio-group>
+        
+        <div class="check-box-container">
+            <mat-checkbox class="checkbox-text" [color]="'primary'">
+                Apply Changes Immediately 
+            </mat-checkbox>
+            <span class="info-icon"><img src="../../../../../assets/information.svg"></span>
+            <p class="change-info">If left unchecked, changes will apply at package anniversary.</p>
+        </div>
+
+        <div class="check-box-container">
+            <mat-checkbox class="checkbox-text" [color]="'primary'">
+                Auto Renew
+            </mat-checkbox>
+            <span class="info-icon"><img src="../../../../../assets/information.svg"></span>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-blue btn-text btn-text-color-white" (click)="ManageConfirmClick()">Confirm</button>
+        </div>
+    </div>
+</div>

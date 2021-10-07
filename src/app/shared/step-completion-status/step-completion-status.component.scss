@@ -1,0 +1,81 @@
+$font-family: 'Roboto';
+
+.close-container {
+    position: relative;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+.close {
+    float: right;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.status-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.status {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #03344E;
+}
+
+.status-details {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+.btn {
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 28px;
+
+    min-height: 7vh;
+    min-width: 15vw;
+}
+
+.cancel-btn {
+    background: #FFFFFF;
+}
+
+.approve-btn {
+    background: #03344E;
+}
+
+.btn-txt {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cancel-text {
+    color: #03344E;
+}
+
+.approve-text {
+    color: #FFFFFF;
+}

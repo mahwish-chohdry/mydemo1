@@ -1,0 +1,200 @@
+$font-family: Roboto;
+
+.back-icon {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.headings {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.enroll {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #03344E;
+}
+
+.telematics {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.progress-bar-container {
+    display: flex;
+    width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 68px;
+    align-items: center;
+    z-index: 1;
+}
+
+.icon {
+    text-align: center;
+}
+
+/*
+.line {
+    border: none;
+    width: -webkit-fill-available;
+    height: 0px;
+    margin-top: 37px;
+}*/
+
+.progress-step {
+    display: inline-block;
+    width: 12%;
+}
+
+.progress-step-heading-container {
+    justify-content: center;
+    align-self: center;
+}
+
+.progress-step-heading {
+    white-space: nowrap;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.step-time {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.step {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.step-heading {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.step-details {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+    white-space: pre-line;
+}
+
+.btn-container {
+    padding-top: 2%;
+    overflow:hidden ;
+}
+
+.previous-btn {
+    width: 205.56px;
+    height: 44px;
+    left: 264.43px;
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 22px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #03344E;
+}
+
+.next-btn {
+    width: 205.56px;
+    height: 44px;
+    left: 970.21px;
+    background: #03344E;
+    border-radius: 22px;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    float: right;
+}
+
+.faq-container {
+    padding-top: 5%;
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-heading {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.accordion-container {
+    padding-bottom: 5%;
+}
+
+.line{
+    border-bottom: 2px solid #E0E0E0 !important;
+    border: none;
+    width: -webkit-fill-available;
+    height: 0px;
+    margin-top: 37px;
+}
+
+.line.Completed{
+    border-bottom: 2px solid  #20AB2C !important;
+}
+
+.download-app-icon {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 5%;
+}

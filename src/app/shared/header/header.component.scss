@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portal-type {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 51px;
+    color: #03344E;
+
+    margin: 1% 1%;
+}
+
+.honda-icon {
+    width: 197.32px;
+    height: 56px;
+}
+
+.loggedIn-user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 1%;
+    width: 140px;
+}
+
+.loggedIn-user {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    white-space: pre-wrap;
+}
+
+.message {
+    font-weight: 500;
+}
+
+.user {
+    font-weight: 700;
+}
+
+.polygon {
+    width: 8px;
+    height: 8px;
+}

@@ -1,0 +1,14 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let panel of panelData" hideToggle="true" #accordion style="display: contents;">
+        <mat-expansion-panel-header [ngStyle]="{'border-bottom': !accordion.expanded ? '1.5px solid #E0E0E0': ''}">
+            <mat-panel-title>
+                {{panel.faq}}
+            </mat-panel-title>
+            <img *ngIf="!accordion.expanded" src="../../../assets/dropdown V2- collapsed.svg"/>
+            <img *ngIf="accordion.expanded" src="../../../assets/dropdown V2- expanded.svg"/>
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{panel.answer}}
+        </mat-panel-description>
+    </mat-expansion-panel>
+</mat-accordion>

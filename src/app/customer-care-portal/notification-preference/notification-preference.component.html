@@ -1,0 +1,70 @@
+<h1 class="heading">Notification Preference Setting</h1>
+
+
+<div class="table-container">
+    <table class="card-table">
+        <thead>
+            <th width="60%">Vehicle Control</th>
+            <th width="20%" class="checkbox-th"><img src="../../../assets/mobile.svg" />Mobile</th>
+            <th width="20%" class="checkbox-th"><img src="../../../assets/email.svg" />Email</th>
+        </thead>
+        <tr>
+            <td>Remote Door Lock/Unlock</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr>  
+        <tr>
+            <td>Remote Engine Startup</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr> 
+    </table>
+</div>
+
+<div class="table-container">
+    <table class="card-table">
+        <thead>
+            <th width="60%">Vehicle Safety</th>
+            <th width="20%" class="checkbox-th"><img src="../../../assets/mobile.svg" />Mobile</th>
+            <th width="20%" class="checkbox-th"><img src="../../../assets/email.svg" />Email</th>
+        </thead>
+        <tr>
+            <td>Security Alert</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr>  
+        <tr>
+            <td>Geofence</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr> 
+        <tr>
+            <td>Speed Alert</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr> 
+        <tr>
+            <td>Stolen Vehicle Locator</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr> 
+    </table>
+</div>
+
+<div class="table-container">
+    <table class="card-table">
+        <thead>
+            <th width="80%">Vehicle Health</th>
+            <th width="20%" class="checkbox-th"><img src="../../../assets/email.svg" />Email</th>
+        </thead>
+        <tr>
+            <td>Vehicle Health Report</td>
+            <td class="checkbox-td"> <mat-checkbox class="checkbox" color="primary"></mat-checkbox></td>
+        </tr>  
+    </table>
+</div>
+
+<div class="btn-row">
+    <button mat-stroked-button color="primary" class="form-btn" (click)="dialogRef.close(false)">Cancel</button>
+    <button mat-flat-button color="primary" class="form-btn" (click)="updateClick()">Update</button>
+</div>

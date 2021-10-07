@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input:focus, button:focus{
+    outline: none !important;
+}
+.loader{
+    background: url('assets/loader.gif') no-repeat center center;
+    background-size: 20vh 20vh;
+    background-color: #0A0D0F;;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: .595;
+    -moz-opacity: .55;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d4d4d4;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #03344E;
+}
+
+input[type=button]{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+
+.custom-mat-input>div>div>.mat-form-field-infix {
+    border-top: .4em solid transparent;
+}
+.custom-mat-input.mat-form-field {
+    line-height: 1.325;
+}
+
+.date-selector .ng-arrow-wrapper {
+    margin-top: 5px;
+    margin-right: 10px;
+}   
+.date-selector>.ng-select-container .ng-arrow{
+     height: 13px !important;
+    width: 23px !important;
+    border: none;
+    background: url("./assets/dropdown\ V1.svg");
+ }
+.date-selector.ng-select-opened>.ng-select-container .ng-arrow {
+    height: 13px !important;
+    width: 23px !important;
+    border: none;
+    background: url("./assets/Dropdown\ V1-expanded.svg") !important;
+}
+
+.dialog-no-padding .mat-dialog-container{
+    padding: 0px;
+}

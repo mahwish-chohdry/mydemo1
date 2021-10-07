@@ -1,0 +1,12 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let panel of panelData">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{panel.faq}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{panel.answer}}
+        </mat-panel-description>
+    </mat-expansion-panel>
+</mat-accordion>

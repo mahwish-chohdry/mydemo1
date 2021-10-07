@@ -1,0 +1,78 @@
+$font-family: 'Roboto';
+
+.discount-card {
+    width: 220px;
+    height: 220px;
+    border: 2px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.bg-color {
+    background: #ffffff;
+}
+
+.bg-color-applied {
+    background: #CEECFF;
+    border: none;
+}
+
+.promo-name {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+
+    text-align: center;
+}
+
+.promo-info {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.discount-percentage {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button {
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 28px;
+
+    width: 176px;
+    height: 40px;
+}
+
+.button-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #03344E;
+}

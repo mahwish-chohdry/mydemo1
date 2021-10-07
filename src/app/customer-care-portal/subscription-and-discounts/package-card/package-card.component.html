@@ -1,0 +1,22 @@
+<mat-card class="package-card">
+    <mat-card-content>
+        <h2 class="package-title">{{packageTitle}}</h2>
+        <p class="package-desc">{{packageDescription}}</p>
+
+        <div *ngFor="let detail of packageDetails" class="package-details">
+            <span class="eclipe-icon"><img src="../../../assets/Ellipse.png"></span> 
+            <span class="package-details-text">{{detail}}</span>
+        </div>
+
+        <div class="price-container">
+            <h3 class="price-starting price-starting-heading">Starting at</h3>
+            <h3 class="price-starting price-starting-price">${{packagePrice}}/month</h3>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <div class="btn-container">
+            <button class="btn button-text" [routerLink]="'../subscription-plan'">Select Package</button>
+        </div>
+    </mat-card-actions>
+</mat-card>

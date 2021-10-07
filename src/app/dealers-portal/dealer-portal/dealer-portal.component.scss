@@ -1,0 +1,383 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dealer-portal {
+    font-family: Neufile Grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 51px;
+    color: #03344E;
+
+    margin: 1% 1%;
+}
+
+.honda-icon {
+    width: 197.32px;
+    height: 56px;
+}
+
+.loggedIn-user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 1%;
+    width: 130px;
+}
+
+.loggedIn-user {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    white-space: pre-wrap;
+}
+
+.message {
+    font-weight: 500;
+}
+
+.user {
+    font-weight: 700;
+}
+
+.polygon {
+    width: 8px;
+    height: 8px;
+}
+
+.main-container {
+    margin: 3% 5%;
+    padding-bottom: 15%;
+}
+
+.back-btn {
+
+    background: url('../../../assets/Icons/Back Button.png');
+    width: 70px;
+    height: 30px;
+
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+}
+
+.package-details {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.telematics-package {
+    display: flex;
+    white-space: pre-wrap;
+
+    
+    font-size: 17px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.package {
+    font-weight: 700;
+}
+
+.package-time {
+    font-weight: 500;
+}
+
+.enrollment-status {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 37px;
+    color: #03344E;
+}
+
+.enrollment-timestamp {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #606060;
+}
+
+.view-package {
+    width: 180px;
+    height: 45px;
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 22px;
+    color: #03344E;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.btn {
+  border-radius: 28px;
+  height: 56px;
+  min-width: 221.08px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.send-enrollment {
+  background: #03344E;
+  color: #FFFFFF; 
+  border-color: #03344e;
+}
+
+.cancel-enrollment {
+  background: #FFFFFF;
+  color: #F60000;
+  border: 1.5px solid #F60000;
+}
+
+.status-container{
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    margin-top: 5%;
+}
+
+.status-heading-container {
+    background: #03344E;
+    border-radius: 10px 10px 0px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
+.refresh-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.refresh-icon {
+    cursor: pointer;
+}
+
+.refresh {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    white-space: pre-wrap;
+}
+
+.status-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar-container {
+    display: flex;
+    width: 90%;
+    
+    margin: 5vh auto;
+    justify-content: space-between;
+}
+
+
+.dealer-progress {
+    border: 2px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 15%
+}
+
+.customer-progress {
+    border: 2px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 80%
+}
+
+.icon-heading {
+  position: absolute;
+  margin-top: -1.5vh;
+  padding: 0 1vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.5px;
+
+  color: #CFCFCF;
+
+  margin-left: 1vw;
+  background-color: white;
+}
+
+.customer-progress-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 4vw;
+  padding-right: 5vw;
+  padding-top: 6vh;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 68px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+    text-align: center;
+}
+
+.progress-step {
+    display: inline-block;
+    width: 12%;
+}
+
+.progress-step-heading-container {
+    justify-content: center;
+}
+
+.progress-step-heading {
+  white-space: nowrap;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #0071B8;
+}
+
+  .step-time {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+  }
+
+  .line {
+    border-bottom: 2px solid #20AB2C !important;
+    border: none;
+    width: -webkit-fill-available;
+    height: 0px;
+    margin-top: 37px;
+  }
+
+
+  .footer {
+    display: flex;
+    background: #F2F2F2;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .car-icon-contaier {
+    flex: 2;
+    flex-direction: row;
+    text-align-last:right;
+  }
+  .img-spacing-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .car-icon {
+    vertical-align: middle;
+  }
+
+  .vehicle-details-section {
+    flex: 3;
+  }
+
+  .vehicle-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .vehicle-details-containers {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .vehicle-customer-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #828282;
+  }
+
+  .vehicle-customer-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+  }
+
+  .vehicle-customer-heading {
+    font-size: 16px;
+    line-height: 19px;
+    color: #03344E;
+    font-weight:400;
+  }
+
+  .vehicle-customer-details {
+
+    font-weight:400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #606060;
+  }
+
+  .customer-details {
+    flex: 1;
+    justify-content: space-around;
+  }
+

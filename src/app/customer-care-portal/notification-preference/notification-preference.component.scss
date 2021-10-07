@@ -1,0 +1,84 @@
+.table-container {
+    padding-top: 22px;
+}
+
+.card-table {
+    border-spacing: unset;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid #cfcfcf;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: white !important;
+    color: #000000;
+}
+
+td {
+    color: #606060;
+    padding: 16px;
+}
+th {
+    padding: 16px;
+    color: #03344e;
+    border-bottom: 2px solid #cfcfcf;
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.sort-icon {
+    padding-left: 7px;
+}
+
+tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.checkbox-th {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+}
+.checkbox-th img {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.checkbox-td {
+    text-align: center;
+}
+.heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.16px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+
+    /* honda button */
+
+    color: #03344e;
+}
+
+.btn-row {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-btn {
+    border-radius: 28px;
+    height: 56px;
+    width: 232px;
+    margin: 0 15px;
+    border-color: #03344e;
+}

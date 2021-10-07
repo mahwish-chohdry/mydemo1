@@ -1,0 +1,163 @@
+$font-family: 'Roboto';
+
+.main-container {
+    margin: 3% 5%;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+.title-and-discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #03344E;
+    margin-bottom: 0px;
+}
+
+.package-info {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+    margin: none;
+}
+
+.btn-white {
+    width: 240px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 28px;
+}
+
+.btn-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.btn-text-color-white {
+    color: #FFFFFF;
+}
+
+.btn-text-color-blue {
+    color: #03344E;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    border:1px solid #CFCFCF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20%;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+    line-height: 28px;
+    background: #03344E;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 16px 30px 16px 30px;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.radio-container {
+    text-align: center;
+    margin-top: 6%;
+}
+
+.card-data-container {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.plan-card-container {
+    background: #FFFFFF;
+    border: 2px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    min-width: 390px;
+    min-height: 240px;
+}
+
+.check-box-container {
+    margin: 0px 30px 0px 30px;
+}
+
+.checkbox-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.info-icon {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.change-info {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+
+    margin-left: 25px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.btn-blue {
+    background: #03344E;
+    border: 1.5px solid #03344E;
+    box-sizing: border-box;
+    border-radius: 28px;
+
+    width: 176px;
+    height: 40px;
+}
+
+.blue-border{
+border: #03344E solid 1px;
+}

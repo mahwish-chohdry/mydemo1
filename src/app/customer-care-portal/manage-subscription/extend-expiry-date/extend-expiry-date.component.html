@@ -1,0 +1,41 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" [mat-dialog-close]="false" class="close">
+</div>
+
+<h1 class="expiry-date-heading">Extend Expiration Date</h1>
+
+<div class="dates-container">
+    <div class="date-input-container">
+        <label for="activated" class="label-text">Activated on</label>
+        <mat-form-field class="custom-mat-input" appearance="outline" style="width: 100%">
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker">
+               
+              </mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    
+    <div class="date-input-container">
+        <label for="expiryDate" class="label-text">Expires on</label>
+        <mat-form-field class="custom-mat-input" appearance="outline" style="width: 100%">
+            <input matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1">
+              </mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+</div>
+
+
+<div class="btn-container">
+    <button mat-stroked-button color="primary" class="cancel-button" (click)="onClickClose()">Cancel</button>
+    <button mat-stroked-button color="primary" class="next-button" (click)="onNextClick()">Next</button>
+</div>
+
+
+
+
+
+
+

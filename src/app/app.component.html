@@ -1,0 +1,11 @@
+<div style="background-color: aquamarine;"> <a mat-flat-button color="primary" style="margin: 1em;" [routerLink]="'/DealerPortal'">Open Dealer Portal</a>
+<a mat-flat-button color="primary" style="margin: 1em;" [routerLink]="'/CustomerPortal'">Open CS Portal</a>
+<a mat-flat-button color="primary" style="margin: 1em;" [routerLink]="'/CustomerPortal/manage-subscription'">Open Package Details</a>
+<a mat-flat-button color="primary" style="margin: 1em;" (click)="showLoader()">Show Loader</a>
+<a mat-flat-button color="primary" style="margin: 1em;" [routerLink]="'/NotFound'">404 - Not Found</a>
+</div>
+<div style="height: 100vh;">
+    <div class="loader" [ngStyle]="{'display':loader?'block':'none'}">
+    </div>
+  <router-outlet></router-outlet>
+</div>

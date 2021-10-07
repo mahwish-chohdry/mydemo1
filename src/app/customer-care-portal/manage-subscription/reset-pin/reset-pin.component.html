@@ -1,0 +1,14 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" [mat-dialog-close]="false" class="close">
+</div>
+
+<h2 class="title">Reset the Pin?</h2>
+
+<p class="details">
+    An email will be sent to {{recieverEmail}} with instructions on how to reset PIN. The reset request will be valid for 24 hours.
+</p>
+
+<div class="btn-container">
+    <button class="btn cancel-btn btn-txt cancel-text" (click)="onClickClose()">Cancel</button>
+    <button class="btn submit-btn btn-txt submit-text" (click)="onSubmitClick()">Submit</button>
+</div>

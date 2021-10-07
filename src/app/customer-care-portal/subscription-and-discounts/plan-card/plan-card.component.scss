@@ -1,0 +1,47 @@
+$font-family: 'Roboto';
+
+.year {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+    text-align: center;
+}
+
+.expiry-date {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.discount {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #0071B8;
+}
+
+.price {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #03344E;
+    text-align: center;
+
+    margin-bottom: 2%;
+}

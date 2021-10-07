@@ -1,0 +1,46 @@
+.footer {
+    height: 30%;
+    background: #F2F2F2;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.car-owner-container {
+    display: flex;
+    align-items: center;
+}
+
+.car-icon {
+    padding-right: 30px;
+}
+
+.owner-details {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.package-details-container {
+    display: flex;
+}
+
+.info-icon {
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.package-details {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}

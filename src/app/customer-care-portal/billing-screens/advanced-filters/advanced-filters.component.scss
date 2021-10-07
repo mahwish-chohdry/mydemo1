@@ -1,0 +1,149 @@
+.heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+
+    /* honda button */
+
+    color: #03344e;
+}
+.heading img {
+    padding-right: 8px;
+}
+.sub-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+
+    color: #000000;
+    padding-bottom: 5px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.date-selector-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.type-row {
+    margin-top: 40px;
+}
+.vehicle-row {
+    margin-top: 40px;
+}
+.checkbox-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* text input */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+    padding: 19px 2px;
+    /* GREY- LIGHTER */
+
+    color: #606060;
+}
+.checkbox {
+    margin-right: 50px;
+}
+.date-selector-dropdown {
+    height: 56px;
+    width: 370px;
+}
+.stylized-input {
+    text-align: center;
+    width: 172px;
+    height: 52px;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+
+    /* honda */
+
+    color: #03344e;
+}
+.date-selector ::ng-deep .ng-select-container {
+    min-height: 56px;
+    min-width: 370px;
+}
+.date-selector ::ng-deep ng-dropdown-panel {
+    min-height: 56px;
+    min-width: 370px;
+}
+.date-selector ::ng-deep .ng-value-label {
+    padding-left: 30px;
+}
+.date-selector ::ng-deep .ng-value-label::before {
+    content: "";
+    display: block;
+    height: 21px;
+    width: 20.11px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    background: url("../../../../assets/calender.svg");
+}
+.date-selector ::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 56px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+
+    /* GREY- LIGHTER */
+
+    color: #606060;
+
+    /* margin: auto; */
+    border-bottom: 1.5px solid #c0c0c0;
+}
+.date-selector ::ng-deep .ng-option-label {
+    line-height: 40px;
+}
+
+.date-selector ::ng-deep ng-dropdown-panel {
+    background: #ffffff;
+    box-sizing: border-box;
+
+    border-left: 1.5px solid #c0c0c0;
+    border-right: 1.5px solid #c0c0c0;
+
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 8px 8px;
+}
+.btn-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.apply-filter-btn{
+    width: 232px;
+    height: 56px;
+    border-radius: 28px;
+}

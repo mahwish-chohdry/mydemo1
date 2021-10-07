@@ -1,0 +1,7 @@
+<h3 class="year">{{planDuration}} year</h3>
+<h4 class="expiry-date">Expires {{planExpiryDate}}</h4>
+<h4 class="discount" *ngIf="availableDiscount !== undefined; else showEmptyDiscount">Save {{availableDiscount}}!</h4>
+<ng-template #showEmptyDiscount>
+    <h4 class="discount">&nbsp;</h4>
+</ng-template>
+<h4 class="price">${{planPrice}}</h4>

@@ -1,0 +1,23 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" (click)="onClickClose()" class="close">
+</div>
+
+<div class="status-icon">
+    <img *ngIf="data.stepSuccessful" src="../../../assets/success.svg">
+    <img *ngIf="!data.stepSuccessful" src="../../../assets/error.svg">
+</div>
+
+<div class="status-content">
+    <h2 class="status">{{data.title}}</h2>
+    <p class="status-details">{{data.details}}</p>
+</div>
+
+<div class="btn-container" *ngIf="data.stepSuccessful">
+    <button mat-stroked-button class="btn approve-btn btn-txt approve-text" (click)="onClickClose()">Close</button>
+</div>
+
+<div class="btn-container" *ngIf="!data.stepSuccessful">
+    <button mat-stroked-button class="btn cancel-btn btn-txt cancel-text" (click)="onClickClose()">Cancel</button>
+    <button mat-stroked-button class="btn approve-btn btn-txt approve-text">Try Again</button>
+</div>
+

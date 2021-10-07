@@ -1,0 +1,155 @@
+<div class="main-container">
+  <button class="back-btn"></button>
+
+  <div class="package-details">
+    <div class="telematics-package">
+      <h4 class="package">Telematics Package: </h4>
+      <h4 class="package-time">6 Month Complimentary Trial</h4>
+    </div>
+
+    <h2 class="enrollment-status">Enrollment Status : Not Started</h2>
+    <h4 class="enrollment-timestamp">Last Updated at [Time Stamp]</h4>
+  </div>
+
+  <div class="button-container">
+    <button mat-stroked-button class="btn send-enrollment" (click)="sendEnrollmentLinkClick()">Send Enrollment Link</button>
+    <button mat-flat-button class="btn cancel-enrollment" (click)="CancelSubscriptionClick()">Cancel Enrollment</button>
+  </div>
+
+  <div class="status-container">
+    <div class="status-heading-container">
+      <h2 class="heading">Enrollment Status</h2>
+      <div class="refresh-container">
+        <img src="../../assets/Icons/Refresh- icon.svg" class="refresh-icon">
+        <h4 class="refresh">  Refresh</h4>
+      </div>
+    </div>
+
+    <div class="status-details-container">
+      <div class="progress-bar-container">
+        <div class="dealer-progress">
+          <span class="icon-heading">Dealer</span>
+
+          <div class="icon-container" style="padding-left: 3.5vw; padding-top: 6vh;">
+            <div class="icon">
+              <img height="39" src="../../assets/Icons/Progress icons_ colour + number/1/Completed.svg">
+            </div>
+            <div class="progress-step-heading-container">
+              <h3 class="progress-step-heading">Download App</h3>
+              <h4 class="step-time">9:45 pm</h4>
+            </div>
+          </div>
+
+        </div>
+        <div class="customer-progress">
+          <span class="icon-heading">Customer</span>
+
+          <div class="customer-progress-icons">
+            <div class="icon-container" (click)="StepClick()">
+              <div class="icon">
+                <img height="39" src="../../assets/Icons/Progress icons_ colour + number/2/Completed.svg">
+              </div>
+              <div class="progress-step-heading-container">
+                <h3 class="progress-step-heading">Add Vehicle</h3>
+                <h4 class="step-time">Not Started</h4>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="icon-container">
+              <div class="icon">
+                <img height="39" src="../../assets/Icons/Progress icons_ colour + number/3/Completed.svg">
+              </div>
+              <div class="progress-step-heading-container">
+                <h3 class="progress-step-heading">Link to Account</h3>
+                <h4 class="step-time">Not Started</h4>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="icon-container">
+              <div class="icon">
+                <img height="39" src="../../assets/Icons/Progress icons_ colour + number/4/Completed.svg">
+              </div>
+              <div class="progress-step-heading-container">
+                <h3 class="progress-step-heading">Enrollment Completed</h3>
+                <h4 class="step-time">Not Started</h4>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="icon-container">
+              <div class="icon">
+                <img height="39" src="../../assets/Icons/Progress icons_ colour + number/5/Completed.svg">
+              </div>
+              <div class="progress-step-heading-container">
+                <h3 class="progress-step-heading">First Remote Command</h3>
+                <h4 class="step-time">Not Started</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="car-icon-contaier">
+          <span class="img-spacing-helper"></span>
+          <img src="../../assets/Icons/car.svg" class="car-icon">
+        </div>
+        <div class="vehicle-details-section">
+
+          <h3 class="vehicle-customer-title" style=" padding-left: 3rem;">Vehicle</h3>
+          <div class="vehicle-details">
+
+            <div class="vehicle-details-containers">
+              <div class="model">
+                <h3 class="vehicle-customer-heading">Model</h3>
+                <h3 class="vehicle-customer-details">Accord</h3>
+              </div>
+              <div class="year">
+                <h3 class="vehicle-customer-heading">Year</h3>
+                <h3 class="vehicle-customer-details">2023</h3>
+              </div>
+            </div>
+
+            <div class="vehicle-details-containers">
+              <div class="color">
+                <h3 class="vehicle-customer-heading">Color</h3>
+                <h3 class="vehicle-customer-details">Crystal black Pearl</h3>
+              </div>
+              <div class="vin">
+                <h3 class="vehicle-customer-heading">VIN</h3>
+                <h3 class="vehicle-customer-details">19UUB41F85GA0003488</h3>
+              </div>
+            </div>
+
+            <div class="vehicle-details-containers">
+
+              <div class="trim">
+                <h3 class="vehicle-customer-heading">Trim</h3>
+                <h3 class="vehicle-customer-details">Touring</h3>
+              </div>
+              <div class="soldDate">
+                <h3 class="vehicle-customer-heading">Sold Date</h3>
+                <h3 class="vehicle-customer-details">10/22/2020</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-details">
+          <h3 class="vehicle-customer-title">Customer</h3>
+          <div class="vehicle-details">
+
+            <div class="vehicle-details-containers" style="flex:auto">
+              <div class="firstname">
+                <h3 class="vehicle-customer-heading">First Name</h3>
+                <h3 class="vehicle-customer-details">Tara</h3>
+              </div>
+              <div class="lastname">
+                <h3 class="vehicle-customer-heading">Last Name</h3>
+                <h3 class="vehicle-customer-details">Owens</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

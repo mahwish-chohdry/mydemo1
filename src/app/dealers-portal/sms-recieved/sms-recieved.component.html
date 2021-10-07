@@ -1,0 +1,66 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" [mat-dialog-close]="false" class="close">
+</div>
+
+<div class="details-container" cdkFocusInitial>
+    <h1 class="main-heading">Trial Package Enrolment</h1>
+    <div class="heading-details">
+        <h3 class="sub-heading">Customer Guidance</h3>
+        <p class="description">
+            Please guide the customer through the steps shown below to complete the enrollment process and have the
+            customer
+            execute a remote command on their vehicle.
+        </p>
+
+        <div class="customer-progress">
+            <span class="icon-heading">Customer</span>
+
+            <div class="customer-progress-icons">
+                <div class="icon-container">
+                    <div class="icon">
+                        <img height="19.21" src="../../assets/Icons/Progress icons_ colour + number/2/Not Started.svg">
+                    </div>
+                    <div class="progress-step-heading-container">
+                        <h3 class="progress-step-heading">Add Vehicle</h3>
+                        <h4 class="step-time">Not Started</h4>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icon-container">
+                    <div class="icon">
+                        <img height="19.21" src="../../assets/Icons/Progress icons_ colour + number/3/Not Started.svg">
+                    </div>
+                    <div class="progress-step-heading-container">
+                        <h3 class="progress-step-heading">Link to Account</h3>
+                        <h4 class="step-time">Not Started</h4>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icon-container">
+                    <div class="icon">
+                        <img height="19.21" src="../../assets/Icons/Progress icons_ colour + number/4/Not Started.svg">
+                    </div>
+                    <div class="progress-step-heading-container">
+                        <h3 class="progress-step-heading">Enrollment Completed</h3>
+                        <h4 class="step-time">Not Started</h4>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icon-container">
+                    <div class="icon">
+                        <img height="19.21" src="../../assets/Icons/Progress icons_ colour + number/5/Not Started.svg">
+                    </div>
+                    <div class="progress-step-heading-container">
+                        <h3 class="progress-step-heading">First Remote Command</h3>
+                        <h4 class="step-time">Not Started</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="button-progress-container">
+        <button mat-flat-button color="primary" class="form-button" (click)="onClickClose();" >Continue to Enrollment Status Details</button>
+    </div>
+</div>
+<app-dealer-popup-footer></app-dealer-popup-footer>

@@ -1,0 +1,122 @@
+$font-family: 'Roboto';
+
+.main-container {
+    margin: 3% 5%;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+.title {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #03344E;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    border:1px solid #CFCFCF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom:28px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+    line-height: 28px;
+    background: #03344E;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 16px 30px 16px 30px;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.card-data-container {
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.card-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.card-data-right{
+    text-align: right;
+}
+
+.card-data-label{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+}
+
+.card-data-info{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #3F3F3F;
+
+    margin-top: 1%;
+}
+
+.card-data-expiry {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #F60000;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-data-package-container {
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.package-card {
+    flex-grow: 1;
+    flex: 0 0 calc(15vw - 2vw);
+    max-width: calc(33vw);
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 700px) {
+    .package-card {
+      max-width: 33vw; 
+    }
+}
+  
+  @media (max-width: 400px) {
+    .package-card {
+      max-width: 50vw; 
+    }
+}

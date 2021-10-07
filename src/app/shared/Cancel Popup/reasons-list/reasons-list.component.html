@@ -1,0 +1,15 @@
+<div [formGroup]="form">
+    <mat-radio-group formControlName="reason" (change)="reasonChanged()" class="package-details">
+        <div class="reason-list">
+            <mat-radio-button *ngFor="let reason of reasons" [value]="reason" color="primary" class="reason-text">
+                {{reason}}
+            </mat-radio-button>
+        </div>
+    </mat-radio-group>
+
+    <h2 class="sub-heading">Details</h2>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label class="label-text">Please provide furthur details about the reason</mat-label>
+        <textarea [required]="form.controls['reason'].value=='Other'" matInput formControlName="explanation"></textarea>
+    </mat-form-field>
+</div>

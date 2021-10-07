@@ -1,0 +1,68 @@
+<div class="back-icon">
+    <img src="../../../assets/Back.png">
+</div>
+
+<div class="headings">
+    <h1 class="enroll">Enrollment</h1>
+    <h2 class="telematics">Telematics Package</h2>
+</div>
+
+<div class="progress-bar-container">
+
+    <ng-container *ngFor=" let heading of allStepHeadings; let idx=index">
+        <div class="icon-container">
+            <div class="icon">
+                <img height="39"
+                    src="../../assets/Icons/Progress icons_ colour + number/{{idx+1}}/{{stepStatus[idx]}}.svg" />
+            </div>
+            <div class="progress-step-heading-container">
+                <h3 class="progress-step-heading">{{heading}}</h3>
+                <h4 class="step-time">9:45 pm</h4>
+            </div>
+
+        </div>
+        <div *ngIf="idx<6" class="line {{stepStatus[idx]}}"></div>
+
+    </ng-container>
+</div>
+
+
+<div class="step">
+    <h3 class="step-heading">Step {{currrentStepIndex+1}}:{{allStepHeadings[currrentStepIndex]}}</h3>
+    <p class="step-details">
+        {{allStepDescriptions[currrentStepIndex]}}
+    </p>
+    <ng-container *ngIf="currrentStepIndex==6">
+      
+        <div class="accordion-container">
+          <app-custom-accordion [panelData]="stepSevenData"></app-custom-accordion>
+      </div>
+
+    </ng-container>
+
+    <div class="download-app-icon" *ngIf="currrentStepIndex === 0">
+        <img src="../../../assets/download_1.png">
+        <img src="../../../assets/arrow-long.svg">
+        <img src="../../../assets/noun_Smartphone_11471011.svg">
+    </div>
+
+    <div class="btn-container" style="height: fit-content;">
+        <button class="previous-btn" *ngIf="currrentStepIndex>0" (click)="goToPreviousStep();">
+            <img src="../../../assets/arrow-back.svg"> Previous
+        </button>
+        <button class="next-btn" *ngIf="currrentStepIndex<6" (click)="goToNextStep();">
+            Next <img src="../../../assets/arrow-forward.svg">
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="faq-container">
+    <h2 class="faq-heading">FAQs & Troubleshooting Guides for Step {{currrentStepIndex+1}}</h2>
+
+    <div class="accordion-container">
+        <app-faq-accordion [panelData]="panelData"></app-faq-accordion>
+    </div>
+</div>

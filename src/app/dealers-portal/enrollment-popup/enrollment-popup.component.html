@@ -1,0 +1,83 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" [mat-dialog-close]="false" class="close">
+</div>
+
+<div class="details-container" cdkFocusInitial>
+    <h1 class="main-heading">Trial Package Enrolment</h1>
+    <div class="heading-details">
+        <h3 class="sub-heading">Customer Number</h3>
+        <p class="description">
+            Send the customer an app download link and/or an enrollment activation link via SMS. The phone provided
+            should be the same phone on which they download the HondaLink app.
+        </p>
+        <div class="flex-container-row">
+            <div class="form-field">
+                <div class="form-label">Enter customer’s phone number:</div>
+                <mat-form-field class="custom-mat-input" appearance="outline">
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="form-field">
+                <div class="form-label">Valid Zip Code</div>
+                <mat-form-field class="custom-mat-input " appearance="outline">
+                    <input matInput>
+                </mat-form-field>
+            </div>
+
+        </div>
+        <div class="terms-conditions">
+            <div class="primary">
+                <span>
+                    <mat-checkbox color="primary"></mat-checkbox>
+                </span>
+                Customer has confirmed their phone number and given consent to receive SMS from Honda
+            </div>
+            <div class="italic">
+                SMS Text Message Term & Conditions: Msg & Data Rates May Apply. Charges may occur. Check with your
+                carrier for more info.
+            </div>
+            <div class="link">
+                <a> See full program Terms and Conditions and Privacy Statement</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="button-progress-container">
+    <ng-container *ngIf="!enrollmentStarted else progressBar">
+        <button mat-flat-button color="primary" class="form-button" (click)="sendEnrollment()">Send Enrollment
+            Link</button>
+    </ng-container>
+    <ng-template #progressBar>
+        <div class="progress-bar">
+            <div class="progress-icon">
+                <ng-container *ngIf="retryCount==0">
+                    <img src="../../../assets/progress-full-circle/1/1 Not started.svg" />
+                </ng-container>
+                <ng-container *ngIf="retryCount==1">
+                    <img src="../../../assets/progress-full-circle/1/1.4 Error.svg" />
+                </ng-container>
+            </div>
+            <div class="progress-full-circle-line"></div>
+            <div class="progress-icon">
+                <img src="../../../assets/progress-full-circle/1/1 Not started.svg" />
+            </div>
+            <div class="progress-full-circle-line"></div>
+            <div class="progress-icon">
+                <img src="../../../assets/progress-full-circle/1/1 Not started.svg" />
+            </div>
+            <div class="progress-full-circle-line"></div>
+            <div class="progress-icon">
+                <img src="../../../assets/progress-full-circle/1/1 Not started.svg" />
+            </div>
+        </div>
+        <div class="progress-text">connecting to the server</div>
+        <div class="btn-container">
+            <button mat-stroked-button color="white" class="form-button" (click)="onClickClose()">Try Later</button>
+            <button mat-flat-button color="primary" class="form-button" (click)="retrySMS();">Retry</button>
+        </div>
+    </ng-template>
+</div>
+
+<app-dealer-popup-footer></app-dealer-popup-footer>

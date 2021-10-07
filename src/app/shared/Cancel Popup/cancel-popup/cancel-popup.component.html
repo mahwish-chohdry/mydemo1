@@ -1,0 +1,18 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" (click)="onClickClose()" class="close">
+</div>
+
+<div class="status-icon">
+    <img src="../../../../assets/error.svg">
+</div>
+
+<h2 class="status">{{data.title}}</h2>
+<p class="status-details">{{data.details}}</p>
+
+<h2 class="sub-heading">Please select a reason</h2>
+<app-reasons-list></app-reasons-list>
+
+<div class="btn-container">
+    <button mat-stroked-button class="cancel-button" (click)="onClickClose()">Cancel</button>
+    <button mat-stroked-button class="next-button" (click)="onSubmitClick()">Confirm</button>
+</div>

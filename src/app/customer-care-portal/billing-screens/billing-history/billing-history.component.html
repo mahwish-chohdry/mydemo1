@@ -1,0 +1,110 @@
+<div class="page-container">
+    <div class="back-icon">
+        <a href="javascript:void(0);" [routerLink]="'../manage-subscription'">
+            <img src="../../../assets/Back.svg">
+        </a>
+    </div>
+    <div class="headings">
+        <h1 class="main-heading">Account Billing History</h1>
+    </div>
+    <div class="filter-bar">
+        <div class="date-filter" style="position: relative; height: 56px;width: 320px; position: relative;">
+            <input style="position: absolute; border-radius: 12px;" [matDatepicker]="picker">
+            <ng-select class="date-selector" [(ngModel)]="dateFilter" [searchable]="false" [clearable]="false"
+                (change)="dateFilterClick($event);" style="position: absolute;" appearance="outline">
+                <ng-option>Last Month</ng-option>
+                <ng-option>Last Year</ng-option>
+                <ng-option>Custom Range</ng-option>
+            </ng-select>
+
+        </div>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+        <div class="advanced-filter">
+            <button (click)="openAdvancedFilters()" mat-stroked-button color="white" class="filter-btn">Advanced
+                Filter</button>
+        </div>
+    </div>
+    <div class="table-container">
+        <table class="card-table">
+            <thead>
+
+                <th>
+                    Date
+                    <img class="sort-icon" src="../../../assets/sort.svg">
+                </th>
+                <th>
+                    Transaction Type
+                    <img class="sort-icon" src="../../../assets/sort.svg">
+                </th>
+                <th>Payment Method</th>
+                <th>
+                    Vehicle
+                    <img class="sort-icon" src="../../../assets/sort.svg">
+                </th>
+                <th width="20%">Description</th>
+                <th width="10%">Amount
+                    <img class="sort-icon" src="../../../assets/sort.svg">
+                </th>
+                <th width="12%" style="text-align: center;">Action</th>
+
+            </thead>
+            <tr>
+                <td>11/13/2020</td>
+                <td>Payment</td>
+                <td>VISA ending in 1559</td>
+                <td>Emily's Accord</td>
+                <td>*REFUND* Telematics Package Annual Plan</td>
+                <td>$500</td>
+                <td>
+                    <div class="links-td">
+                        <a class="link" href="javascript:void(0);">View</a>
+                        <a class="link" href="javascript:void(0);">Send</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>11/13/2020</td>
+                <td>Payment</td>
+                <td>MasterCard ending in 6880</td>
+                <td>Emily's Accord</td>
+                <td>Telematics Package Annual Plan</td>
+                <td>-$95</td>
+                <td>
+                    <div class="links-td">
+                        <a class="link" href="javascript:void(0);">View</a>
+                        <a class="link" href="javascript:void(0);">Send</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>01/12/2019</td>
+                <td>Invoice</td>
+                <td>VISA ending in 9292</td>
+                <td>Emily's Accord</td>
+                <td>Telematics Package Annual Plan</td>
+                <td>-$200</td>
+                <td>
+                    <div class="links-td">
+                        <a class="link" href="javascript:void(0);">View</a>
+                        <a class="link" href="javascript:void(0);">Send</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>01/12/2018</td>
+                <td>Payment</td>
+                <td>VISA ending in 1559</td>
+                <td>Emily's Accord</td>
+                <td>*REFUND* Telematics Package Annual Plan</td>
+                <td>-$95</td>
+                <td>
+                    <div class="links-td">
+                        <a class="link" href="javascript:void(0);">View</a>
+                        <a class="link" href="javascript:void(0);">Send</a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>

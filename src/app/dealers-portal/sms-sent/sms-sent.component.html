@@ -1,0 +1,26 @@
+<h1 class="title">Trial Package Enrollment</h1>
+<div class="status-icon">
+    <img src="../../../assets/success.svg">
+</div>
+
+<div class="details-container">
+    <h3 class="sms-sent">SMS Sent</h3>
+    <p class="sms-details">
+        Once the customer receives the enrollment link and have downloaded the HondaLink app to their phone, they can go
+        ahead and tap on the enrollment link
+        <br><br>
+        The customer will automatically redirected to the HondaLink app to complete the enrollment.
+        <br><br>
+        Track your customer’s progress through the Enrollment status details. If they encounter any issues, refer to the
+        FAQ and Troubleshooting Guides by clicking the status link.
+        <br><br>
+    </p>
+</div>
+<div class="btn-container">
+    <button mat-stroked-button color="white" class="form-button" (click)="smsRecievedClick(false);">Resend Enrollment
+        Link</button>
+    <button mat-flat-button color="primary" class="form-button" (click)="smsRecievedClick(true);">Customer Recieved
+        SMS</button>
+</div>
+
+<app-dealer-popup-footer></app-dealer-popup-footer>

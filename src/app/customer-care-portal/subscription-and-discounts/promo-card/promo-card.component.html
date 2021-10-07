@@ -1,0 +1,15 @@
+<mat-card [ngClass]="promoApplied?'bg-color-applied':'bg-color'" class="discount-card">
+    <mat-card-content>
+        <h2 class="promo-name">{{promoName}}</h2>
+        <h3 class="promo-info">{{promoInfo}}</h3>
+        <h2 class="discount-percentage">{{discount}}% off</h2>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="button-container">
+            <button (click)="promoClicked();" [ngClass]="promoApplied?'bg-color-applied':'bg-color'" class="action-button button-text" *ngIf="promoApplied; else showApplied">Remove Discount</button>
+            <ng-template #showApplied>
+                <button (click)="promoClicked();"  [ngClass]="promoApplied?'bg-color-applied':'bg-color'" class="action-button button-text">Apply Discount</button>
+            </ng-template>
+        </div>
+    </mat-card-actions>
+</mat-card>

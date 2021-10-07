@@ -1,0 +1,47 @@
+<div class="close-container">
+    <img src="../assets/close_icon.svg" [mat-dialog-close]="false" class="close">
+</div>
+
+<h2 class="title">Manage Discounts</h2>
+
+<div class="card">
+    <div class="card-header">
+        Applied Discounts
+    </div>
+    <div class="card-data-container">
+        <ng-container *ngFor="let promo of promos">
+            <app-promo-card *ngIf="promo.selected"   (promoUpdate)="promoUpdate(promo,$event)" [promoApplied]="promo.selected" class="promo-card" [promoName]="promo.name" [promoInfo]="promo.info" [discount]="promo.discount">
+            </app-promo-card>
+        </ng-container>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Available Discounts
+    </div>
+    <div class="card-data-main-container">
+
+        <div class="search-bar">
+            <div class="search-bar-inner-container">
+                <input type="text" placeholder="Enter coupon code" class="search-input">
+                <button class="search-icon"><img src="../../../../assets/icon-search.png"></button>
+            </div>
+        </div>
+
+        <div class="card-data-container">
+            <ng-container *ngFor="let promo of promos">
+                <app-promo-card 
+                *ngIf="!promo.selected"
+                (promoUpdate)="promoUpdate(promo,$event)"
+                class="promo-card" 
+                [promoName]="promo.name"
+                [promoInfo]="promo.info"
+                 [discount]="promo.discount">
+                </app-promo-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+<button class="confirm-btn confirm-btn-text" [mat-dialog-close]="true">Confirm</button>

@@ -1,0 +1,156 @@
+.back-icon {
+    padding-top: 2%;
+}
+
+.page-container {
+    width: 85%;
+    margin: 0 auto;
+}
+.main-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    color: #03344e;
+}
+
+.filter-bar {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-filter {
+    width: 30%;
+}
+.date-selector ::ng-deep .ng-select-container {
+    min-height: 56px;
+    min-width: 320px;
+}
+.date-selector ::ng-deep ng-dropdown-panel {
+    min-height: 56px;
+    min-width: 320px;
+}
+.date-selector ::ng-deep .ng-value-label {
+    padding-left: 30px;
+}
+.date-selector ::ng-deep .ng-value-label::before {
+    content: "";
+    display: block;
+    height: 21px;
+    width: 20.11px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    background: url("../../../../assets/calender.svg");
+}
+.date-selector ::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 56px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+
+    /* GREY- LIGHTER */
+
+    color: #606060;
+
+    /* margin: auto; */
+    border-bottom: 1.5px solid #c0c0c0;
+}
+.date-selector ::ng-deep .ng-option-label {
+    line-height: 40px;
+}
+
+.date-selector ::ng-deep ng-dropdown-panel {
+    background: #ffffff;
+    box-sizing: border-box;
+
+    border-left: 1.5px solid #c0c0c0;
+    border-right: 1.5px solid #c0c0c0;
+
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.table-container {
+    padding-top: 25px;
+}
+
+.card-table {
+    border-spacing: unset;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid #cfcfcf;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    letter-spacing: 0.5px;
+    
+    /* GREY- LIGHTER */
+    
+    color: #606060;
+}
+
+th {
+    background-color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+thead {
+    background-color: white !important;
+    color: #000000;
+}
+
+td,
+th {
+    padding: 16px;
+    color: #000000;
+}
+
+th {
+    border-bottom: 2px solid #cfcfcf;
+}
+.sort-icon {
+    padding-left: 7px;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.filter-btn {
+    min-width: 232px;
+    min-height: 56px;
+    border-radius: 28px;
+    border: 1.5px solid #03344e;
+}
+.links-td{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .link{
+        text-decoration: none;
+        color: #0071B8;
+    }
+}

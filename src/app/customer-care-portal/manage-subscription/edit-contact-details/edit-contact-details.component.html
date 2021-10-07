@@ -1,0 +1,118 @@
+<h1>Edit Subscription Contact Infomation</h1>
+
+<div class="form-container" [formGroup]="formGroup">
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">First Name</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="firstName">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Last Name</div>
+            <mat-form-field class="custom-mat-input " appearance="outline">
+                <input matInput formControlName="lastName">
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">Primary Phone Number</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput type="tel" formControlName="phoneNumber">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label"></div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <mat-select formControlName="phonetype">
+                    <mat-option *ngFor="let type of phoneTypes" [value]="type.value">
+                        {{type.value}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">Login Email</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="loginEmail">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Country</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <mat-select formControlName="country">
+                    <mat-option *ngFor="let type of phoneTypes" [value]="type.value">
+                        {{type.value}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">Business Name(optional)</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="businessName">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Address Line 1</div>
+            <mat-form-field class="custom-mat-input " appearance="outline">
+                <input matInput formControlName="addressLine1">
+            </mat-form-field>
+        </div> 
+
+    </div>
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">Address Line 2(optional)</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="addressLine2">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label">City</div>
+            <mat-form-field class="custom-mat-input " appearance="outline">
+                <input matInput formControlName="city">
+            </mat-form-field>
+        </div>
+
+    </div>
+
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">State/Province</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="state">
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Zip/Postal Code</div>
+            <mat-form-field class="custom-mat-input " appearance="outline">
+                <input matInput formControlName="zip">
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div class="flex-container-row">
+        <div class="form-field">
+            <div class="form-label">Preferred Language</div>
+            <mat-form-field class="custom-mat-input" appearance="outline">
+                <input matInput formControlName="language">
+            </mat-form-field>
+        </div>
+        <div class="form-field"></div>
+
+    </div>
+</div>
+
+<div class="form-footer">
+    <button mat-stroked-button color="white" class="edit-form-button" (click)="dialogRef.close();">Cancel</button>
+    <button mat-flat-button color="primary" class="edit-form-button" style="margin-left: 1vw;" (click)="dialogRef.close();"
+    [ngClass]="{'disabled':!formGroup.valid}">Save</button>
+</div>

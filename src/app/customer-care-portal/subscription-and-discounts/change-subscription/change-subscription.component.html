@@ -1,0 +1,35 @@
+<div class="main-container">
+    <div>
+        <a href="javascript:void(0);" [routerLink]="'../manage-subscription'">
+            <img src="../../../assets/Back.svg">
+        </a>
+    </div>
+    <h2 class="title">Change Subscription</h2>
+
+    <div class="card">
+        <div class="card-header">
+            Current Plan
+        </div>
+        <div class="card-data-container">
+            <div class="card-data">
+                <label class="card-data-label">6 month Complimentary trial</label> 
+                <label class="card-data-info">Security package plus remote package</label>
+            </div>
+            <div class="card-data card-data-right">
+                <label class="card-data-expiry">Expires in 10 days</label> 
+                <label class="card-data-info">on (9-15-2020)</label>
+            </div>
+        </div>
+    </div>  
+
+    <div class="card">
+        <div class="card-header">
+            Packages
+        </div>
+        <div class="card-data-package-container">
+            <app-package-card class="package-card"></app-package-card>
+            <app-package-card class="package-card"></app-package-card>
+            <app-package-card class="package-card"></app-package-card>
+        </div>
+    </div>
+</div>
